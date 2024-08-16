@@ -31,77 +31,112 @@ const useStyles = makeStyles(() => ({
 }));
 export const Products = () => {
   const classes = useStyles();
-  const [age, setAge] = React.useState('');
+  const [prices, setPrices] = React.useState('allPrices');
+  const [brands, setBrands] = React.useState('allBrands');
+  const [stock, setStock] = React.useState('allStock');
+  const [ orderByPrice, setOrderByPrice] = React.useState("asc");
 
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
+  const handlePriceChange = (event) => setPrices(event.target.value);
+  const handleBrandChange = (event) => setBrands(event.target.value);
+  const handleStockChange = (event) => setStock(event.target.value);
+  const handleOrderByPriceChange = (event) => setOrderByPrice(event.target.value);
+
+  const filteredPhones = dataPhones
+    .filter((phone) => {
+      if (prices !== 'allPrices') {
+        if (prices === '0-500K' && (phone.price < 0 || phone.price > 500000)) return false;
+        if (prices === '500K-800K' && (phone.price < 500000 || phone.price > 800000)) return false;
+        if (prices === '800K-2M' && (phone.price < 800000 || phone.price > 2000000)) return false;
+        if (prices === '2M-5M' && (phone.price < 2000000 || phone.price > 5000000)) return false;
+      }
+      if (brands !== 'allBrands' && phone.brand !== brands) return false;
+      if (stock !== 'allStock') {
+        if (stock === 'inStock' && !phone.isStock) return false;
+        if (stock === 'outOfStock' && phone.isStock) return false;
+      }
+      return true;
+    })
+    .sort((a, b) => {
+      return orderByPrice === 'asc' ? a.price - b.price : b.price - a.price;
+    });
+
+
 
   return (
     <SkalekLayaout>
       <Grid className={classes.gridSelect}>
-        <Box sx={{ minWidth: 120 }} >
-          <FormControl fullWidth margin='dense'
-           >
-            <InputLabel id="demo-simple-select-label">Todos los precios:</InputLabel>
-            <Select
-              labelId="demo-simple-select-label"
-              id="demo-simple-select"
-              value={age}
-              label="Age"
-              onChange={handleChange}
-            >
-              <MenuItem value={10}>500K a 800K</MenuItem>
-              <MenuItem value={20}>800K a 2M</MenuItem>
-              <MenuItem value={30}>2M a 5M</MenuItem>
-            </Select>
-            
-          </FormControl>
+        <Box sx={{ minWidth: 120 }}>
           <FormControl fullWidth margin='dense'>
-            <InputLabel id="demo-simple-select-label">Todos las marcas:</InputLabel>
+            <InputLabel id="price-select-label">Todos los precios:</InputLabel>
             <Select
-              labelId="demo-simple-select-label"
-              id="demo-simple-select"
-              value={age}
-              label="Age"
-              onChange={handleChange}
+              labelId="price-select-label"
+              id="price-select"
+              value={prices}
+              onChange={handlePriceChange}
             >
-              <MenuItem value={10}>Caterpillar</MenuItem>
-              <MenuItem value={20}>Iphone</MenuItem>
-              <MenuItem value={30}>Corn</MenuItem>
-              <MenuItem value={40}>Samsung</MenuItem>
-              <MenuItem value={50}>Honor</MenuItem>
-              <MenuItem value={60}>Redmi</MenuItem>
-              <MenuItem value={70}>Samsung</MenuItem>
-              <MenuItem value={80}>Oppo</MenuItem>
-              <MenuItem value={90}>Motorolla</MenuItem>
-              <MenuItem value={100}>Asus</MenuItem>
-              <MenuItem value={110}>Alkatel</MenuItem>
-              <MenuItem value={120}>Nokia</MenuItem>
-              <MenuItem value={130}>Celkon</MenuItem>
+              <MenuItem value='allPrices'>Todos los precios</MenuItem>
+              <MenuItem value='0-500K'>0 a 500K</MenuItem>
+              <MenuItem value='500K-800K'>500K a 800K</MenuItem>
+              <MenuItem value='800K-2M'>800K a 2M</MenuItem>
+              <MenuItem value='2M-5M'>2M a 5M</MenuItem>
             </Select>
-            
           </FormControl>
+
           <FormControl fullWidth margin='dense'>
-            <InputLabel id="demo-simple-select-label">Inventario:</InputLabel>
+            <InputLabel id="brand-select-label">Todas las marcas:</InputLabel>
             <Select
-              labelId="demo-simple-select-label"
-              id="demo-simple-select"
-              value={age}
-              label="Age"
-              onChange={handleChange}
+              labelId="brand-select-label"
+              id="brand-select"
+              value={brands}
+              onChange={handleBrandChange}
             >
-              <MenuItem value={10}>Disponibles</MenuItem>
-              <MenuItem value={20}>Agotados</MenuItem>
-              
+              <MenuItem value='allBrands'>Todas las marcas</MenuItem>
+              <MenuItem value='Caterpillar'>Caterpillar</MenuItem>
+              <MenuItem value='Iphone'>Iphone</MenuItem>
+              <MenuItem value='Corn'>Corn</MenuItem>
+              <MenuItem value='Samsung'>Samsung</MenuItem>
+              <MenuItem value='Honor'>Honor</MenuItem>
+              <MenuItem value='Redmi'>Redmi</MenuItem>
+              <MenuItem value='Oppo'>Oppo</MenuItem>
+              <MenuItem value='Motorolla'>Motorolla</MenuItem>
+              <MenuItem value='Azus'>Azus</MenuItem>
+              <MenuItem value='Alkatel'>Alkatel</MenuItem>
+              <MenuItem value='Nokia'>Nokia</MenuItem>
+              <MenuItem value='Celkon'>Celkon</MenuItem>
             </Select>
-            
+          </FormControl>
+
+          <FormControl fullWidth margin='dense'>
+            <InputLabel id="stock-select-label">Inventario:</InputLabel>
+            <Select
+              labelId="stock-select-label"
+              id="stock-select"
+              value={stock}
+              onChange={handleStockChange}
+            >
+              <MenuItem value='allStock'>Todos</MenuItem>
+              <MenuItem value='inStock'>Disponibles</MenuItem>
+              <MenuItem value='outOfStock'>Agotados</MenuItem>
+            </Select>
+          </FormControl>
+
+          <FormControl fullWidth margin='dense'>
+            <InputLabel id="order-price-select-label">Ordenar Precio:</InputLabel>
+            <Select
+              labelId="order-price-select-label"
+              id="order-price-select"
+              value={orderByPrice}
+              onChange={handleOrderByPriceChange}
+            >
+              <MenuItem value='asc'>Menor a mayor</MenuItem>
+              <MenuItem value='desc'>Mayor a menor</MenuItem>
+            </Select>
           </FormControl>
         </Box>
       </Grid>
 
-      <Grid  className={classes.gridList}>
-        {dataPhones.map((data) => (
+      <Grid className={classes.gridList}>
+        {filteredPhones.map((data) => (
           <CardProduct key={data.id} data={data} />
         ))}
       </Grid>
