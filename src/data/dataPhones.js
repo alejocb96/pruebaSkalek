@@ -1,0 +1,278 @@
+export const dataPhones = [
+    {
+      "id": 1,
+      "name": "Caterpillar A10",
+      "brand": "Caterpillar",
+      "description": "dispositivo movil safiro",
+      "category": "Low",
+      "isStock": true,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_719051-MCO70415174454_072023-F.webp",
+      "price": 300000,
+      "quantity": "inventario 5"
+    },
+    {
+      "id": 2,
+      "name": "Honor F2",
+      "brand": "Honor",
+      "description": "dispositivo movil de alto rendimiento ",
+      "category": "High",
+      "isStock": false,
+      "imageUrl": "https://http2.mlstatic.com/D_Q_NP_2X_946747-MLA74807971101_022024-V.webp",
+      "price": 950000,
+      "quantity": "inventario 0"
+    },
+    {
+      "id": 3,
+      "name": "Corn a-25",
+      "brand": "Corn",
+      "description": "dispositivo movil uso diario",
+      "category": "Low",
+      "isStock": true,
+      "imageUrl": "	https://http2.mlstatic.com/D_NQ_NP_2X_993701-MCO76904614048_062024-F.webp",
+      "price": 190000,
+      "quantity":  "inventario 2"
+    },
+    {
+      "id": 4,
+      "name": "Iphone 13",
+      "brand": "Iphone",
+      "description": "dispositivo movil exclente capacidad y memoria grafica",
+      "category": "High",
+      "isStock": false,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_654080-MLA47781882564_102021-F.webp",
+      "price": 3500000,
+      "quantity": "inventario 0"
+    },
+    {
+      "id": 5,
+      "name": "Iphone 14",
+      "brand": "Iphone",
+      "description": "dispositivo movil excelente memoria y camara",
+      "category": "High",
+      "isStock": true,
+      "imageUrl": "	https://http2.mlstatic.com/D_NQ_NP_2X_724950-MCO54950905956_042023-F.webp",
+      "price": 4500000,
+      "quantity":  "inventario 3"
+    },
+    {
+      "id": 6,
+      "name": "Nokia b-25",
+      "brand": "Nokia",
+      "description": "dispositivo movil para uso diario",
+      "category": "Low",
+      "isStock": true,
+      "imageUrl": "	https://http2.mlstatic.com/D_NQ_NP_2X_615952-MLA74782708493_022024-F.webp",
+      "price": 230000,
+      "quantity":  "inventario 5"
+    },
+    {
+      "id": 7,
+      "name": "Iphone 12 pro max",
+      "brand": "Iphone",
+      "description": "dispositivo movil exclente camara y capacidad",
+      "category": "High",
+      "isStock": false,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_707630-MLM51559386375_092022-F.webp",
+      "price": 2500000,
+      "quantity":  "inventario 0"
+    },
+    {
+      "id": 8,
+      "name": "Samsung A05s",
+      "brand": "Samsung",
+      "description": "dispositivo movil doble proposito",
+      "category": "Medium",
+      "isStock": true,
+      "imageUrl": "	https://http2.mlstatic.com/D_NQ_NP_2X_692475-MLA73827160832_012024-F.webp",
+      "price": 520000,
+      "quantity":  "inventario 11"
+    },
+    {
+      "id": 9,
+      "name": "Samsung A28",
+      "brand": "Samsung",
+      "description": "dispositivo movil para uso diario ",
+      "category": "Medium",
+      "isStock": true,
+      "imageUrl": "	https://http2.mlstatic.com/D_NQ_NP_2X_656404-MLA76511207126_052024-F.webp",
+      "price": 780000,
+      "quantity":  "inventario 9"
+
+    },
+    {
+      "id": 10,
+      "name": "Iphone 15 pro max 0",
+      "brand": "Iphone",
+      "description": "dispositivo movil exclente calidad en el mercado",
+      "category": "High",
+      "isStock": false,
+      "imageUrl": "	https://http2.mlstatic.com/D_NQ_NP_2X_768125-MLA71783090116_092023-F.webp",
+      "price": 5800000,
+      "quantity":  "inventario 0"
+    },
+    {
+      "id": 11,
+      "name": "Nokia ultra",
+      "brand": "Nokia",
+      "description": "dispositivo movil para uso diario ",
+      "category": "Medium",
+      "isStock": true,
+      "imageUrl": "	https://http2.mlstatic.com/D_NQ_NP_2X_726491-MLA49378990974_032022-F.webp",
+      "price": 192000,
+      "quantity":  "inventario 14"
+    },
+    {
+      "id": 12,
+      "name": "Celkon A9",
+      "brand": "Celkon",
+      "description": "dispositivo movil para uso basico",
+      "category": "Low",
+      "isStock": false,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_778184-MCO74447553807_022024-F.webp",
+      "price": 84000,
+      "quantity":  "inventario 0"
+    },
+    {
+      "id": 13,
+      "name": "Nokia panelon",
+      "brand": "Nokia",
+      "description": "dispositivo movil para uso bascio",
+      "category": "Low",
+      "isStock": true,
+      "imageUrl": "	https://http2.mlstatic.com/D_NQ_NP_2X_767385-CBT72329882586_102023-F.webp",
+      "price": 98000,
+      "quantity":  "inventario 10"
+    },
+    {
+      "id": 14,
+      "name": "Alkatel v25",
+      "brand": "Alkatel",
+      "description": "dispositivo movil para uso basico ",
+      "category": "Low",
+      "isStock": true,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_844978-CBT77732940685_072024-F.webp",
+      "price": 69000,
+      "quantity":  "inventario 8"
+    },
+    {
+      "id": 15,
+      "name": "Corn c3",
+      "brand": "Corn",
+      "description": "dispositivo movil para uso basico ",
+      "category": "Low",
+      "isStock": false,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_733590-MCO76107785543_042024-F.webp",
+      "price": 120000,
+      "quantity":  "inventario 0"
+    },
+    {
+      "id": 16,
+      "name": "Honor Magic39",
+      "brand": "Honor",
+      "description": "dispositivo movil para uso empresarial o alto rendimiento ",
+      "category": "Medium",
+      "isStock": false,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_740084-MLU78233986644_082024-F.webp",
+      "price": 900000,
+      "quantity":  "inventario 0"
+    },
+    {
+      "id": 17,
+      "name": "Honor plus24",
+      "brand": "Honor",
+      "description": "dispositivo movil para correr juegos ",
+      "category": "Low",
+      "isStock": false,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_634427-MLA69358324118_052023-F.webp",
+      "price": 999000,
+      "quantity":  "inventario 0"
+    },
+    {
+      "id": 18,
+      "name": "Azus gamer ultra pro",
+      "brand": "Azus",
+      "description": "dispositivo movil excelente memoria discografica",
+      "category": "High",
+      "isStock": true,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_616893-MLA74807968403_022024-F.webp",
+      "price":485000,
+      "quantity": "inventario 4"
+    },
+    {
+      "id": 19,
+      "name": "Oppo reno84",
+      "brand": "Oppo",
+      "description": "dispositivo movil para uso domestico",
+      "category": "High",
+      "isStock": true,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_857842-MLU77620848843_072024-F.webp",
+      "price": 650000,
+      "quantity":  "inventario 8"
+    },
+    {
+      "id": 20,
+      "name": "Motorolla B1",
+      "brand": "Motorolla",
+      "description": "dispositivo movil para uso basico ",
+      "category": "Low",
+      "isStock": true,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_975168-MCO69658249201_052023-F.webp",
+      "price": 300000,
+      "quantity":  "inventario 3"
+    },
+    {
+      "id": 21,
+      "name": "Azus ultra87",
+      "brand": "Azus",
+      "description": "dispositivo movil para uso de redes y juegos ",
+      "category": "High",
+      "isStock": false,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_931295-MLA74864081270_032024-F.webp",
+      "price": 798000,
+      "quantity":  "inventario 0"
+    },
+    {
+      "id": 22,
+      "name": "Oppo A58",
+      "brand": "Oppo",
+      "description": "dispositivo movil excelente memoria y camara ",
+      "category": "Medium",
+      "isStock": true,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_823347-MCO73382964022_122023-F.webp",
+      "price": 1035000,
+      "quantity":  "inventario 7"
+    },
+    {
+      "id": 23,
+      "name": "Honor play 42",
+      "brand": "Honor",
+      "description": "dispositivo movil para uso basico",
+      "category": "Medium",
+      "isStock": true,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_954397-CBT75742055141_042024-F.webp",
+      "price": 1400000,
+      "quantity":  "inventario 9"
+    },
+    {
+      "id": 24,
+      "name": "Samsung Note4",
+      "brand": "Samsung",
+      "description": "dispositivo movil uso empresarial y domestico ",
+      "category": "High",
+      "isStock": true,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_608222-MCO74942715096_032024-F.webp",
+      "price": 3500000,
+      "quantity":  "inventario 5"
+    },
+    {
+      "id": 25,
+      "name": "Redmi 52",
+      "brand": "Redmi",
+      "description": "dispositivo movil para uso basico",
+      "category": "High",
+      "isStock": true,
+      "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_867088-MLU77514228492_072024-F.webp",
+      "price": 2300000,
+      "quantity":  "inventario 0"
+    }
+  ]
