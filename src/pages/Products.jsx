@@ -13,11 +13,12 @@ const useStyles = makeStyles(() => ({
     }
   },
   gridList: {
+    columns: "12",
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
-    width: "100%",
-    height: "auto",
+    minWidth: "100vh",
+    height: "100vh",
     gap: "2rem"
   },
   gridSelect: {
@@ -25,7 +26,7 @@ const useStyles = makeStyles(() => ({
     flexWrap: "wrap",
     justifyContent: "center",
     width: "15%",
-    
+
   },
 
 }));
@@ -34,7 +35,7 @@ export const Products = () => {
   const [prices, setPrices] = React.useState('allPrices');
   const [brands, setBrands] = React.useState('allBrands');
   const [stock, setStock] = React.useState('allStock');
-  const [ orderByPrice, setOrderByPrice] = React.useState("asc");
+  const [orderByPrice, setOrderByPrice] = React.useState("asc");
 
   const handlePriceChange = (event) => setPrices(event.target.value);
   const handleBrandChange = (event) => setBrands(event.target.value);
@@ -64,7 +65,14 @@ export const Products = () => {
 
   return (
     <SkalekLayaout>
-      <Grid className={classes.gridSelect}>
+      <Grid className={classes.gridSelect}
+        sx={{
+          fontSize: "2rem",
+          marginLeft: "54rem",
+          marginTop: "6rem",
+          marginBottom: "3rem",
+        }}
+      >
         <Box sx={{ minWidth: 120 }}>
           <FormControl fullWidth margin='dense'>
             <InputLabel id="price-select-label">Todos los precios:</InputLabel>
@@ -135,7 +143,7 @@ export const Products = () => {
         </Box>
       </Grid>
 
-      <Grid className={classes.gridList}>
+      <Grid className={classes.gridList} margin="10px">
         {filteredPhones.map((data) => (
           <CardProduct key={data.id} data={data} />
         ))}

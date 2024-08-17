@@ -14,15 +14,18 @@ const useStyles = makeStyles(() => ({
     display: "flex",
     justifyContent: "center",
     background: "-webkit-linear-gradient(90deg, #354e69,#000000)",
-    height: 100
+    height: 100,
+    minWidth: "100vh"
   },
   navlinks: {
     marginLeft: "50px",
     display: "flex",
+    
   },
   navContainer: {
     display: "flex",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    minWidth: "100vh"
   },
   link: {
     textDecoration: "none",
@@ -43,7 +46,7 @@ export const Navbar = () => {
       <CssBaseline />
       <Toolbar className={classes.navContainer}>
         <Typography variant="h4" className={classes.logo}>
-          Celumovil Alejandro
+          Celumovil Colombia
         </Typography>
         <Apple style={{ fontSize: 40 }} />
         <div className={classes.navlinks}>

@@ -7,13 +7,11 @@ import { SkalekLayaout } from "../layaout/SkalekLayaout";
 
 export const AppRouter = () => {
   return (
-      <Routes> 
-          <Route path="/products" element={ <Products /> } />
-          <Route path="/" element={ <Home /> } />
-          <Route path="/" element={<Navigate to="/" />}/>
- 
-      </Routes>
-    
+    <Routes> 
+        <Route path="/products" element={ <Products /> } />
+        <Route path="/" element={ <Home /> } />
+        <Route path="/" element={<Navigate to="/" />}/>
+    </Routes>
   )
 }
 

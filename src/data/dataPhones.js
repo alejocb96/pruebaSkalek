@@ -101,7 +101,7 @@ export const dataPhones = [
     },
     {
       "id": 10,
-      "name": "Iphone 15 pro max 0",
+      "name": "Iphone 15 pro max",
       "brand": "Iphone",
       "description": "dispositivo movil exclente calidad en el mercado",
       "category": "High",

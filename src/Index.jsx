@@ -5,14 +5,7 @@ import { SkalekLayaout } from './layaout/SkalekLayaout';
 
 export const CardApp = () => {
   return (
-    <Typography variant='h1'>
-      <AppThems>
         <SkalekLayaout />     
-      </AppThems>
-    </Typography> 
-      
-        
-   
   )
 }
 CardApp.propTypes = {

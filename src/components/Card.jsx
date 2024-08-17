@@ -29,7 +29,6 @@ const useStyles = makeStyles(() => ({
   },
   title: {
     fontWeight: "bold",
-    fontSize: "2rem",
   }
 }));
 
@@ -47,19 +46,19 @@ export const CardProduct = ({ data }) => {
           className={classes.image}
         />
         <CardContent className={classes.content}>
-          <Typography gutterBottom variant="h6" component="h2" className={classes.title}>
+          <Typography gutterBottom variant="h3" className={classes.title}>
             {data.name}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="h6" >
             {data.brand}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="h6">
             {new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP' }).format(data.price)}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="h6">
             {data.description}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="h6">
             {data.quantity}
           </Typography>
         </CardContent>

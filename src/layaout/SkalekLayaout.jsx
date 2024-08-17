@@ -7,7 +7,7 @@ export const SkalekLayaout = ({ children }) => {
         <Box>
             <Navbar />
             <Box component='main'
-                sx={{ p: 3, display: "flex", justifyContent: "center" }}
+               
             >
                 {children}
             </Box>
