@@ -37,26 +37,6 @@ Sigue estos pasos para ejecutar el proyecto localmente:
    yarn dev .
 5. Abre tu navegador y ve a http://localhost:3000 para ver la aplicación en acción.
 
-
- 
- 📂src
- ┣ 📂components
- ┣ ┣  📜Card.jsx
- ┃ ┣  📜Navbar.jsx
- ┃ 📂data     
- ┃ ┃  📜dataPhones.js
- ┣ 📂layout 
- ┣ ┣  📜SkalekLayaout.jsx
- ┃ ┗   
- ┣ 📂pages  
- ┃ ┣  📜products.jsx
- ┣ ┣  📜Home.jsx
- ┣ ┣
- ┃ 📂router
- ┃ ┣  📜AppRouter.jsx
- ┣ 📂theme 
- ┃ ┣  📜AppThems.jsx
- ┣ ┣..📜colorTheme.js
  
  Contribución
 
