@@ -1,6 +1,4 @@
-# Proyecto Celumovil Alejandro
-
-![Celumovil Alejandro](https://link-a-tu-imagen/banner.png)
+# Proyecto Celumovil Colombia
 
 ## Descripción
 
@@ -35,7 +33,7 @@ Sigue estos pasos para ejecutar el proyecto localmente:
    yarn install.
 4. inicia la aplicacion:
    yarn dev .
-5. Abre tu navegador y ve a http://localhost:3000 para ver la aplicación en acción.
+5. Abre tu navegador y ve a  http://localhost:5173/ para ver la aplicación en acción.
 
  
  Contribución

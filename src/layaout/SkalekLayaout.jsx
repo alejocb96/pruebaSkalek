@@ -4,13 +4,20 @@ import { Navbar } from '../components/Navbar';
 
 export const SkalekLayaout = ({ children }) => {
     return (
+
         <Box>
             <Navbar />
-            <Box component='main'
-               
+            <Box
+                sx={{
+                    display: "flex", '@media (max-width: 600px)': {
+                        flexDirection: "column",
+                    },
+                }}
             >
                 {children}
             </Box>
         </Box>
+
+
     )
 }

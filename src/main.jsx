@@ -4,13 +4,16 @@ import { BrowserRouter } from 'react-router-dom';
 import { AppRouter } from './router/AppRouter';
 import './style.css';
 import { AppThems } from './theme/AppThems';
+import { FiltersProvider } from './context/FiltersProvider';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <AppThems>
-        <AppRouter />
-      </AppThems>
+      <FiltersProvider>
+        <AppThems>
+          <AppRouter />
+        </AppThems>
+      </FiltersProvider>
     </BrowserRouter>
   </React.StrictMode>
 
