@@ -1,6 +1,6 @@
-import { Box } from '@mui/material';
 import React from 'react';
 import { Navbar } from '../components/Navbar';
+import { Box } from '@mui/material';
 
 export const SkalekLayaout = ({ children }) => {
     return (
@@ -19,5 +19,5 @@ export const SkalekLayaout = ({ children }) => {
         </Box>
 
 
-    )
-}
+    );
+};

@@ -15,6 +15,6 @@ export const AppRouter = () => {
       </Routes>
     </FiltersProvider>
 
-  )
-}
+  );
+};
 

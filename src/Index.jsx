@@ -3,7 +3,7 @@ import { SkalekLayaout } from './layaout/SkalekLayaout';
 
 export const CardApp = () => {
   return (
-        <SkalekLayaout />     
+        <SkalekLayaout />
   )
 }
 CardApp.propTypes = {

@@ -1,4 +1,4 @@
-import { makeStyles } from "@mui/styles"
+import { makeStyles } from "@mui/styles";
 import { useContext } from "react";
 import { FiltersContext } from "../context/FiltersContext";
 import { Box, FormControl, Grid, InputLabel, MenuItem, Select } from "@mui/material";
@@ -24,7 +24,7 @@ const useStyles = makeStyles(() => ({
             height: "100vh",
             gap: "2rem"
         },
-    }
+    },
 
 }));
 

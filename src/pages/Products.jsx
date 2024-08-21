@@ -11,7 +11,6 @@ export const Products =  () => {
 
   const { prices, brands, stock, orderByPrice } = useContext(FiltersContext);
 
-  console.log(prices, brands, stock, orderByPrice)
   const filteredPhones = dataPhones.filter((phone) => {
     if (prices !== 'allPrices') {
       if (prices === '0-500K' && (phone.price < 0 || phone.price > 500000)) return false;

@@ -10,12 +10,12 @@ import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles(() => ({
   card: {
     width: "300px",
-    margin: "10px",
+    margin: "8px",
     borderRadius: "10px",
-    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+    boxShadow: "0 4px 8px rgb(180, 180, 180)",
     transition: "transform 0.3s ease-in-out",
     '&:hover': {
-      transform: "scale(1.05)"
+      transform: "scale(1.07)"
     }
   },
   image: {

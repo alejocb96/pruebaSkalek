@@ -11,15 +11,15 @@ import {
   ListItemText,
 } from "@mui/material";
 import { makeStyles } from '@mui/styles';
-import { Link } from "react-router-dom";
 import { Apple, Menu as MenuIcon } from '@mui/icons-material';
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(() => ({
   headerContainer: {
     display: "flex",
     justifyContent: "center",
     background: "-webkit-linear-gradient(90deg, #354e69,#000000)",
-    height: "25vh",
+    height: "19vh",
   },
   navlinks: {
     display: "flex",
@@ -60,6 +60,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 export const Navbar = () => {
+
   const classes = useStyles();
   const [openDrawer, setOpenDrawer] = useState(false);
 
@@ -88,7 +89,7 @@ export const Navbar = () => {
           className={classes.menuButton}
           onClick={handleDrawerOpen}
         >
-          <MenuIcon />
+        <MenuIcon />
         </IconButton>
 
         {/* Links para pantallas grandes */}

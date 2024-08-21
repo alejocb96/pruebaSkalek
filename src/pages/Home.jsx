@@ -1,4 +1,3 @@
-import React, { useContext } from 'react';
 import { SkalekLayaout } from '../layaout/SkalekLayaout';
 import { Box,Typography } from '@mui/material';
 
@@ -22,7 +21,7 @@ export const Home = () => {
         }}
       >
        
-        <Typography variant='h1' component='h1' sx={{ fontWeight: 'bold' }}>
+        <Typography variant='h2' component='h2' sx={{ fontWeight: 'bold' }}>
           Coleccion de Apple!
         </Typography>
         <hr />
@@ -37,7 +36,7 @@ export const Home = () => {
           src="https://www.celudmovil.com.co/cdn/shop/collections/IPHONEEE.webp?v=1701567463&width=1920"
           sx={{
             mt: 2,
-            mb: 0,
+            mb: 5,
             width: "100%"
           }}
         />
@@ -45,6 +44,6 @@ export const Home = () => {
 
     </SkalekLayaout>
 
-  )
-}
+  );
+};
 

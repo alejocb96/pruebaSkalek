@@ -195,7 +195,7 @@ export const dataPhones = [
       "category": "High",
       "isStock": true,
       "imageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_616893-MLA74807968403_022024-F.webp",
-      "price":485000,
+      "price":4850000,
       "quantity": "inventario 4"
     },
     {

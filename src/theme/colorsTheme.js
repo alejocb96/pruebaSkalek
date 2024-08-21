@@ -1,5 +1,5 @@
-import { createTheme } from '@mui/material'
-import { red } from '@mui/material/colors'
+import { createTheme } from '@mui/material';
+import { red } from '@mui/material/colors';
 
 export const colorsTheme = createTheme({
     palette: {
@@ -37,7 +37,7 @@ export const colorsTheme = createTheme({
 
         },
     },
-})
+});
 
 
 
